@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4DD2BA9623230C7800A2DC26 /* us000121.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4DD2BA9523230C7700A2DC26 /* us000121.mp3 */; };
+		4DD2BA982323137800A2DC26 /* teste.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4DD2BA972323137800A2DC26 /* teste.mp3 */; };
 		923DD4252322EE25006DAE75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923DD4242322EE25006DAE75 /* AppDelegate.swift */; };
 		923DD4272322EE25006DAE75 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923DD4262322EE25006DAE75 /* ViewController.swift */; };
 		923DD42A2322EE25006DAE75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 923DD4282322EE25006DAE75 /* Main.storyboard */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4DD2BA9523230C7700A2DC26 /* us000121.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = us000121.mp3; sourceTree = "<group>"; };
+		4DD2BA972323137800A2DC26 /* teste.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = teste.mp3; sourceTree = "<group>"; };
 		923DD4212322EE25006DAE75 /* SpeechIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeechIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		923DD4242322EE25006DAE75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		923DD4262322EE25006DAE75 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +105,8 @@
 				923DD4262322EE25006DAE75 /* ViewController.swift */,
 				923DD4282322EE25006DAE75 /* Main.storyboard */,
 				923DD42B2322EE26006DAE75 /* Assets.xcassets */,
+				4DD2BA9523230C7700A2DC26 /* us000121.mp3 */,
+				4DD2BA972323137800A2DC26 /* teste.mp3 */,
 				923DD42D2322EE26006DAE75 /* LaunchScreen.storyboard */,
 				923DD4302322EE26006DAE75 /* Info.plist */,
 			);
@@ -230,7 +236,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				923DD42F2322EE26006DAE75 /* LaunchScreen.storyboard in Resources */,
+				4DD2BA982323137800A2DC26 /* teste.mp3 in Resources */,
 				923DD42C2322EE26006DAE75 /* Assets.xcassets in Resources */,
+				4DD2BA9623230C7800A2DC26 /* us000121.mp3 in Resources */,
 				923DD42A2322EE25006DAE75 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,7 +441,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NM36QJ4P82;
+				DEVELOPMENT_TEAM = GM73VGBYQV;
 				INFOPLIST_FILE = SpeechIOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -451,7 +459,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NM36QJ4P82;
+				DEVELOPMENT_TEAM = GM73VGBYQV;
 				INFOPLIST_FILE = SpeechIOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
