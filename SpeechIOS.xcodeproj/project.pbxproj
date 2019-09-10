@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		4DD2BA9623230C7800A2DC26 /* us000121.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4DD2BA9523230C7700A2DC26 /* us000121.mp3 */; };
 		4DD2BA982323137800A2DC26 /* teste.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4DD2BA972323137800A2DC26 /* teste.mp3 */; };
+		6C339B2E232811C100A376ED /* SpeechViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C339B2D232811C100A376ED /* SpeechViewController.swift */; };
+		6C339B302328126B00A376ED /* Speech.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C339B2F2328126B00A376ED /* Speech.storyboard */; };
 		923DD4252322EE25006DAE75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923DD4242322EE25006DAE75 /* AppDelegate.swift */; };
 		923DD4272322EE25006DAE75 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923DD4262322EE25006DAE75 /* ViewController.swift */; };
 		923DD42A2322EE25006DAE75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 923DD4282322EE25006DAE75 /* Main.storyboard */; };
@@ -38,6 +40,8 @@
 /* Begin PBXFileReference section */
 		4DD2BA9523230C7700A2DC26 /* us000121.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = us000121.mp3; sourceTree = "<group>"; };
 		4DD2BA972323137800A2DC26 /* teste.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = teste.mp3; sourceTree = "<group>"; };
+		6C339B2D232811C100A376ED /* SpeechViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechViewController.swift; sourceTree = "<group>"; };
+		6C339B2F2328126B00A376ED /* Speech.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Speech.storyboard; sourceTree = "<group>"; };
 		923DD4212322EE25006DAE75 /* SpeechIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeechIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		923DD4242322EE25006DAE75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		923DD4262322EE25006DAE75 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +82,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6C339B2C2328119E00A376ED /* JP */ = {
+			isa = PBXGroup;
+			children = (
+				6C339B2D232811C100A376ED /* SpeechViewController.swift */,
+				6C339B2F2328126B00A376ED /* Speech.storyboard */,
+			);
+			path = JP;
+			sourceTree = "<group>";
+		};
 		923DD4182322EE25006DAE75 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +114,7 @@
 		923DD4232322EE25006DAE75 /* SpeechIOS */ = {
 			isa = PBXGroup;
 			children = (
+				6C339B2C2328119E00A376ED /* JP */,
 				923DD4242322EE25006DAE75 /* AppDelegate.swift */,
 				923DD4262322EE25006DAE75 /* ViewController.swift */,
 				923DD4282322EE25006DAE75 /* Main.storyboard */,
@@ -237,6 +251,7 @@
 			files = (
 				923DD42F2322EE26006DAE75 /* LaunchScreen.storyboard in Resources */,
 				4DD2BA982323137800A2DC26 /* teste.mp3 in Resources */,
+				6C339B302328126B00A376ED /* Speech.storyboard in Resources */,
 				923DD42C2322EE26006DAE75 /* Assets.xcassets in Resources */,
 				4DD2BA9623230C7800A2DC26 /* us000121.mp3 in Resources */,
 				923DD42A2322EE25006DAE75 /* Main.storyboard in Resources */,
@@ -265,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				923DD4272322EE25006DAE75 /* ViewController.swift in Sources */,
+				6C339B2E232811C100A376ED /* SpeechViewController.swift in Sources */,
 				923DD4252322EE25006DAE75 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -441,7 +457,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GM73VGBYQV;
+				DEVELOPMENT_TEAM = V9TV25TFN7;
 				INFOPLIST_FILE = SpeechIOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

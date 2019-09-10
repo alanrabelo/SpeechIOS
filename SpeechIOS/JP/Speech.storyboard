@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14810.11" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ta7-WH-PlC">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14766.13"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Speech View Controller-->
+        <scene sceneID="6Zq-hD-3co">
+            <objects>
+                <viewController id="Ta7-WH-PlC" customClass="SpeechViewController" customModule="SpeechIOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6TH-1p-e0P">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Speech..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KzY-4H-YxB">
+                                <rect key="frame" x="20" y="95" width="357" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8lL-O4-cia">
+                                <rect key="frame" x="138.5" y="790" width="137" height="45"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="START REC"/>
+                                <connections>
+                                    <action selector="recButtonAction:" destination="Ta7-WH-PlC" eventType="touchUpInside" id="opH-O4-qhy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="KzY-4H-YxB" firstAttribute="top" secondItem="1og-iD-VdO" secondAttribute="top" constant="51" id="CVW-Ra-Kwy"/>
+                            <constraint firstItem="KzY-4H-YxB" firstAttribute="leading" secondItem="1og-iD-VdO" secondAttribute="leading" constant="20" id="Evs-LI-QWm"/>
+                            <constraint firstItem="1og-iD-VdO" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="KzY-4H-YxB" secondAttribute="bottom" constant="746" id="PWJ-Bb-0eT"/>
+                            <constraint firstItem="8lL-O4-cia" firstAttribute="centerX" secondItem="1og-iD-VdO" secondAttribute="centerX" id="T2q-ek-dqH"/>
+                            <constraint firstItem="1og-iD-VdO" firstAttribute="bottom" secondItem="8lL-O4-cia" secondAttribute="bottom" constant="27" id="pnD-Ra-vLv"/>
+                            <constraint firstItem="1og-iD-VdO" firstAttribute="trailing" secondItem="KzY-4H-YxB" secondAttribute="trailing" constant="37" id="sTQ-v5-C0G"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1og-iD-VdO"/>
+                    </view>
+                    <connections>
+                        <outlet property="recButton" destination="8lL-O4-cia" id="pO6-an-9tQ"/>
+                        <outlet property="textLabel" destination="KzY-4H-YxB" id="UJA-Kg-r8Q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Ys-ww-Ztv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="17.410714285714285"/>
+        </scene>
+    </scenes>
+</document>
