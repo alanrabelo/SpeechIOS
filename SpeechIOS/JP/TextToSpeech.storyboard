@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14810.11" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nhT-yS-1h5">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14766.13"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Text To Speech View Controller-->
+        <scene sceneID="aj5-Ob-Omi">
+            <objects>
+                <viewController id="nhT-yS-1h5" customClass="TextToSpeechViewController" customModule="SpeechIOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3sY-L5-yGb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bPn-0b-AD2">
+                                <rect key="frame" x="32" y="117" width="350" height="34"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="htu-AR-90e">
+                                <rect key="frame" x="170.5" y="229" width="73" height="30"/>
+                                <state key="normal" title="To Speech"/>
+                                <connections>
+                                    <action selector="speechAction:" destination="nhT-yS-1h5" eventType="touchUpInside" id="4cU-2c-ykC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bPn-0b-AD2" firstAttribute="leading" secondItem="qhg-gb-Mvm" secondAttribute="leading" constant="32" id="17o-bl-M78"/>
+                            <constraint firstItem="bPn-0b-AD2" firstAttribute="top" secondItem="qhg-gb-Mvm" secondAttribute="top" constant="73" id="JYy-ck-DHO"/>
+                            <constraint firstItem="htu-AR-90e" firstAttribute="top" secondItem="qhg-gb-Mvm" secondAttribute="top" constant="185" id="MHP-Zp-hcK"/>
+                            <constraint firstItem="qhg-gb-Mvm" firstAttribute="trailing" secondItem="bPn-0b-AD2" secondAttribute="trailing" constant="32" id="MXX-dC-a9J"/>
+                            <constraint firstItem="htu-AR-90e" firstAttribute="centerX" secondItem="qhg-gb-Mvm" secondAttribute="centerX" id="PCL-wG-nVH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qhg-gb-Mvm"/>
+                    </view>
+                    <connections>
+                        <outlet property="speechButton" destination="htu-AR-90e" id="LYI-r9-J9n"/>
+                        <outlet property="textField" destination="bPn-0b-AD2" id="Gyh-Ue-53U"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DD2-pQ-nK5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="179.71014492753625" y="98.4375"/>
+        </scene>
+    </scenes>
+</document>
