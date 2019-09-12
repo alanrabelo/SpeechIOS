@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14810.11" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ta7-WH-PlC">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14810.11" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eFa-MN-wre">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Speech View Controller-->
+        <!--Speech To Text-->
         <scene sceneID="6Zq-hD-3co">
             <objects>
                 <viewController id="Ta7-WH-PlC" customClass="SpeechViewController" customModule="SpeechIOS" customModuleProvider="target" sceneMemberID="viewController">
@@ -17,13 +17,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Speech..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KzY-4H-YxB">
-                                <rect key="frame" x="20" y="95" width="357" height="21"/>
+                                <rect key="frame" x="20" y="95" width="357" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8lL-O4-cia">
-                                <rect key="frame" x="138.5" y="790" width="137" height="45"/>
+                                <rect key="frame" x="138.5" y="741" width="137" height="45"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <state key="normal" title="START REC"/>
                                 <connections>
@@ -31,7 +31,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="KzY-4H-YxB" firstAttribute="top" secondItem="1og-iD-VdO" secondAttribute="top" constant="51" id="CVW-Ra-Kwy"/>
                             <constraint firstItem="KzY-4H-YxB" firstAttribute="leading" secondItem="1og-iD-VdO" secondAttribute="leading" constant="20" id="Evs-LI-QWm"/>
@@ -42,6 +42,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1og-iD-VdO"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Speech To Text" image="mic.fill" catalog="system" id="aZO-0x-h8i"/>
                     <connections>
                         <outlet property="recButton" destination="8lL-O4-cia" id="pO6-an-9tQ"/>
                         <outlet property="textLabel" destination="KzY-4H-YxB" id="UJA-Kg-r8Q"/>
@@ -49,7 +50,74 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Ys-ww-Ztv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="910.14492753623199" y="17.410714285714285"/>
+        </scene>
+        <!--Text To Speech-->
+        <scene sceneID="CET-8f-bND">
+            <objects>
+                <viewController id="GAi-Is-gMG" customClass="TextToSpeechViewController" customModule="SpeechIOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1Y2-a0-6gh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SGk-fY-Qbj">
+                                <rect key="frame" x="100" y="328" width="214" height="46"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <state key="normal" title="Speech"/>
+                                <connections>
+                                    <action selector="speechAction:" destination="GAi-Is-gMG" eventType="touchUpInside" id="YB6-1j-goH"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iyw-2g-XsH">
+                                <rect key="frame" x="32" y="194" width="350" height="34"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="k0z-mG-AB2" firstAttribute="trailing" secondItem="iyw-2g-XsH" secondAttribute="trailing" constant="32" id="06U-nx-dhJ"/>
+                            <constraint firstItem="iyw-2g-XsH" firstAttribute="top" secondItem="k0z-mG-AB2" secondAttribute="top" constant="150" id="8zc-PG-HSQ"/>
+                            <constraint firstItem="SGk-fY-Qbj" firstAttribute="top" secondItem="iyw-2g-XsH" secondAttribute="bottom" constant="100" id="Gsa-kx-m0b"/>
+                            <constraint firstItem="SGk-fY-Qbj" firstAttribute="leading" secondItem="k0z-mG-AB2" secondAttribute="leading" constant="100" id="Vu6-O5-LXZ"/>
+                            <constraint firstItem="iyw-2g-XsH" firstAttribute="leading" secondItem="k0z-mG-AB2" secondAttribute="leading" constant="32" id="gYo-DE-YhG"/>
+                            <constraint firstItem="k0z-mG-AB2" firstAttribute="trailing" secondItem="SGk-fY-Qbj" secondAttribute="trailing" constant="100" id="xM9-R6-agp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="k0z-mG-AB2"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Text To Speech" image="textformat" catalog="system" id="jxO-N4-E1c"/>
+                    <connections>
+                        <outlet property="speechButton" destination="SGk-fY-Qbj" id="oAE-UI-Bmc"/>
+                        <outlet property="textField" destination="iyw-2g-XsH" id="Bl0-Wh-XYb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nNp-YI-Svw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="908.69565217391312" y="772.76785714285711"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="g3Q-Tm-14Y">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="eFa-MN-wre" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NfP-81-srV">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Ta7-WH-PlC" kind="relationship" relationship="viewControllers" id="WYJ-5f-Qrg"/>
+                        <segue destination="GAi-Is-gMG" kind="relationship" relationship="viewControllers" id="Yim-qJ-7PF"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="92R-0Y-ca9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
             <point key="canvasLocation" x="0.0" y="17.410714285714285"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="mic.fill" catalog="system" width="50" height="64"/>
+        <image name="textformat" catalog="system" width="64" height="40"/>
+    </resources>
 </document>

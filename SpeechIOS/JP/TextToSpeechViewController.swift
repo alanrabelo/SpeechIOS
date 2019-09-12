@@ -20,7 +20,7 @@ class TextToSpeechViewController: UIViewController {
     }
     @IBAction func speechAction(_ sender: Any) {
         let speechSynthesizer = AVSpeechSynthesizer()
-        
+        textField.endEditing(true)
         guard let text = textField.text else { return }
         let speechUtterance: AVSpeechUtterance = AVSpeechUtterance(string: text)
         speechUtterance.voice = AVSpeechSynthesisVoice(language: "pt-PT")
